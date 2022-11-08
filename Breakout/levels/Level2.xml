@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Level>
+  <RowCount>4</RowCount>
+  <ColumnCount>15</ColumnCount>
+  <RowSpacing>5</RowSpacing>
+  <ColumnSpacing>5</ColumnSpacing>
+  <BackgroundTexture>images//textures//Background.png</BackgroundTexture>
+  <BrickTypes>
+    <BrickType>
+      <Id>S</Id>
+      <Texture>images//textures//BrickSoft.png</Texture>
+      <HitPoints>1</HitPoints>
+      <HitSound>sounds//BrickHit.wav</HitSound>
+      <BreakSound>sounds//BrickBreak.wav</BreakSound>
+      <BreakScore>5</BreakScore>
+    </BrickType>
+    <BrickType>
+      <Id>M</Id>
+      <Texture>images//textures//BrickMedium.png</Texture>
+      <HitPoints>2</HitPoints>
+      <HitSound>sounds//BrickHit.wav</HitSound>
+      <BreakSound>sounds//BrickBreak.wav</BreakSound>
+      <BreakScore>10</BreakScore>
+    </BrickType>
+    <BrickType>
+      <Id>H</Id>
+      <Texture>images//textures//BrickHard.png</Texture>
+      <HitPoints>3</HitPoints>
+      <HitSound>sounds//BrickHit.wav</HitSound>
+      <BreakSound>sounds//BrickBreak.wav</BreakSound>
+      <BreakScore>20</BreakScore>
+    </BrickType>
+    <BrickType>
+      <Id>I</Id>
+      <Texture>images//textures//BrickInfinite.png</Texture>
+      <HitPoints>Infinite</HitPoints>
+      <HitSound>sounds//BrickHit.wav</HitSound>
+      <BreakScore>0</BreakScore>
+    </BrickType>
+  </BrickTypes>
+  <Bricks>H H M M M I S S S I M M M H H
+S H H S S S E E E S S S H H S
+S S S S S M M M M M S S S S S
+S S S S S S S S S S S S S S S</Bricks>
+</Level>
