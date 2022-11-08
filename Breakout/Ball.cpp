@@ -1,8 +1,8 @@
 #include "Ball.h"
 #include <iostream>
 
-float BALL_WIDTH = 20;
-float BALL_HEIGHT = 20;
+int BALL_WIDTH = 20;
+int BALL_HEIGHT = 20;
 
 Ball::Ball(SDL_Renderer* renderer) : mRenderer(renderer), ballRect{ 0, 0, 0, 0}, intersectRect{ 0, 0, 0, 0}, movePos{300, 360}
 {
@@ -73,7 +73,7 @@ void Ball::CheckWallCollision(int screenWidth, int topMargin, int screenHeight, 
 
 	if (movePos.y < topMargin) {
 		Mix_PlayChannel(-1, mHitSound, 0);
-		movePos.y = topMargin + 1; // +1 to make sure ball doesnt stay over the topMargin due to the speed
+		movePos.y = static_cast<float>(topMargin + 1); // +1 to make sure ball doesnt stay over the topMargin due to the speed
 		moveDir.y *= -1;
 	}
 	else if (ballRect.y >= screenHeight) {

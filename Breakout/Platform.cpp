@@ -10,8 +10,8 @@ Platform::Platform(SDL_Renderer* renderer, int width, int height) : mRenderer(re
 {
 	mTexture = IMG_LoadTexture(mRenderer, "images/Platform.png");
 
-	movePos.x = (width / 2) - PLATFORM_WIDTH; // Place it in the middle of the x position of the screen
-	movePos.y = height - PLATFORM_HEIGHT * 2; // Place it a little above the end of the y position
+	movePos.x = static_cast<float>((width / 2) - PLATFORM_WIDTH); // Place it in the middle of the x position of the screen
+	movePos.y = static_cast<float>(height - PLATFORM_HEIGHT * 2); // Place it a little above the end of the y position
 
 	moveVel.x = 3.0f * PLATFORM_SPEED;
 	moveVel.y = 0;
@@ -29,8 +29,8 @@ void Platform::SpawnPlatform() {
 		0, 0, PLATFORM_WIDTH, PLATFORM_HEIGHT
 	};
 
-	mDest.x = movePos.x;
-	mDest.y = movePos.y;
+	mDest.x = static_cast<int>(movePos.x);
+	mDest.y = static_cast<int>(movePos.y);
 	mDest.w = PLATFORM_WIDTH;
 	mDest.h = PLATFORM_HEIGHT;
 
