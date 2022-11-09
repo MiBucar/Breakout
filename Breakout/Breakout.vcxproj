@@ -78,13 +78,13 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Projects\SDL\Breakout\Breakout\SDL\SDL2-2.24.1\include;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_ttf-2.20.1\include;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_mixer-2.6.2\include;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_image-2.6.2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Projects\SDL\Breakout\Breakout\SDL\SDL2-2.24.1\lib\x64;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_ttf-2.20.1\lib\x64;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_mixer-2.6.2\lib\x64;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_image-2.6.2\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)SDL\SDL2_image-2.6.2\include;$(ProjectDir)SDL\SDL2_mixer-2.6.2\include;$(ProjectDir)SDL\SDL2_ttf-2.20.1\include;$(ProjectDir)SDL\SDL2-2.24.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)SDL\SDL2_image-2.6.2\lib\x64;$(ProjectDir)SDL\SDL2_mixer-2.6.2\lib\x64;$(ProjectDir)SDL\SDL2_ttf-2.20.1\lib\x64;$(ProjectDir)SDL\SDL2-2.24.1\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Projects\SDL\Breakout\Breakout\SDL\SDL2-2.24.1\include;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_ttf-2.20.1\include;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_mixer-2.6.2\include;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_image-2.6.2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Projects\SDL\Breakout\Breakout\SDL\SDL2-2.24.1\lib\x64;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_ttf-2.20.1\lib\x64;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_mixer-2.6.2\lib\x64;C:\Projects\SDL\Breakout\Breakout\SDL\SDL2_image-2.6.2\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)SDL\SDL2_image-2.6.2\include;$(ProjectDir)SDL\SDL2_mixer-2.6.2\include;$(ProjectDir)SDL\SDL2_ttf-2.20.1\include;$(ProjectDir)SDL\SDL2-2.24.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)SDL\SDL2_image-2.6.2\lib\x64;$(ProjectDir)SDL\SDL2_mixer-2.6.2\lib\x64;$(ProjectDir)SDL\SDL2_ttf-2.20.1\lib\x64;$(ProjectDir)SDL\SDL2-2.24.1\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
