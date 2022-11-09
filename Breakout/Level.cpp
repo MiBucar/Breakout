@@ -14,7 +14,7 @@ Level::Level(SDL_Renderer* renderer) : mRenderer(renderer), mScore(0), mHp(3), m
 
 	mTopWall = IMG_LoadTexture(mRenderer, "images//TopWall.png");
 
-	mFont = TTF_OpenFont("C://Projects//SDL//Breakout//Breakout//font//Jersey.ttf", 24);
+	mFont = TTF_OpenFont("font//Jersey.ttf", 24);
 
 	mBricks.Init(mRenderer, mTopMargin, levelArr[mLevelN]);
 
