@@ -32,9 +32,8 @@ Level::~Level()
 		SDL_DestroyTexture(mTextTexture[i]); mTextTexture[i] = nullptr;
 	}
 
-	mFont = nullptr; 
+	mFont = nullptr;
 	TTF_CloseFont(mFont);
-	TTF_Quit();
 }
 
 // Main rendering function

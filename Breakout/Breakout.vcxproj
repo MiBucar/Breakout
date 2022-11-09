@@ -78,12 +78,12 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)SDL\SDL2_image-2.6.2\include;$(ProjectDir)SDL\SDL2_mixer-2.6.2\include;$(ProjectDir)SDL\SDL2_ttf-2.20.1\include;$(ProjectDir)SDL\SDL2-2.24.1\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir);$(ProjectDir)SDL\SDL2_image-2.6.2\include;$(ProjectDir)SDL\SDL2_mixer-2.6.2\include;$(ProjectDir)SDL\SDL2_ttf-2.20.1\include;$(ProjectDir)SDL\SDL2-2.24.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)SDL\SDL2_image-2.6.2\lib\x64;$(ProjectDir)SDL\SDL2_mixer-2.6.2\lib\x64;$(ProjectDir)SDL\SDL2_ttf-2.20.1\lib\x64;$(ProjectDir)SDL\SDL2-2.24.1\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)SDL\SDL2_image-2.6.2\include;$(ProjectDir)SDL\SDL2_mixer-2.6.2\include;$(ProjectDir)SDL\SDL2_ttf-2.20.1\include;$(ProjectDir)SDL\SDL2-2.24.1\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir);$(ProjectDir)SDL\SDL2_image-2.6.2\include;$(ProjectDir)SDL\SDL2_mixer-2.6.2\include;$(ProjectDir)SDL\SDL2_ttf-2.20.1\include;$(ProjectDir)SDL\SDL2-2.24.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)SDL\SDL2_image-2.6.2\lib\x64;$(ProjectDir)SDL\SDL2_mixer-2.6.2\lib\x64;$(ProjectDir)SDL\SDL2_ttf-2.20.1\lib\x64;$(ProjectDir)SDL\SDL2-2.24.1\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -120,7 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Projects\SDL\Breakout\Breakout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -136,7 +136,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Projects\SDL\Breakout\Breakout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
